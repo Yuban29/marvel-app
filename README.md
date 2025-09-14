@@ -1,50 +1,181 @@
-# Welcome to your Expo app 👋
+### Marvel Task App
+### Una aplicación móvil con React Native y Expo Router que combina un gestor de tareas con información de héroes de Marvel.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 🚀 Características
 
-## Get started
+✅ Gestor de tareas con prioridades y categorías
 
-1. Install dependencies
+🦸 Galería de héroes de Marvel
 
-   ```bash
-   npm install
-   ```
+📱 Navegación con Expo Router
 
-2. Start the app
+🎨 Interfaz con React Native Paper
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tecnologías
 
-In the output, you'll find options to open the app in a
+React Native
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Expo Router
 
-## Get a fresh project
+React Native Paper
 
-When you're ready, run:
+TypeScript
+
+## 📦 Instalación
 
 ```bash
-npm run reset-project
+
+Clonar el repositorio
+git clone https://github.com/TU_USUARIO/marvel-task-app.git
+
+Navegar al directorio
+cd marvel-task-app
+
+Instalar dependencias
+npm install
+
+Iniciar la aplicación
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📱 Uso
 
-## Learn more
+### Gestor de Tareas
 
-To learn more about developing your project with Expo, look at the following resources:
+Crear tareas con diferentes prioridades (Alta, Media, Baja)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Organizar por categorías (Trabajo, Personal, Compras, Estudio)
 
-## Join the community
+Marcar como recurrentes para tareas periódicas
 
-Join our community of developers creating universal apps.
+Marcar como completadas cuando termines
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Galería de Héroes
+
+Explorar héroes de Marvel
+
+Ver detalles completos de cada héroe
+
+Conocer habilidades y primera aparición
+
+## 🎨 Componentes Principales
+
+```typescript
+// Estructura de un héroe
+interface Hero {
+id: string;
+name: string;
+alias: string;
+description: string;
+image: string;
+abilities: string[];
+firstAppearance: string;
+}
+
+// Estructura de una tarea
+interface Task {
+id: string;
+title: string;
+priority: 'high' | 'medium' | 'low';
+category: string;
+recurrent: boolean;
+completed: boolean;
+}
+```
+
+## 📁 Estructura del Proyecto
+
+ymarvel-task-app/ ├── app/ │ ├── (tabs)/ │ │ ├── _layout.tsx │ │ ├── index.tsx │ │ ├── tasks.tsx │ │ └── heroes.tsx │ └── heroes/ │ └── [id].tsx ├── components/ │ └── HeroCard.tsx ├── assets/ ├── package.json ├── app.json └── tsconfig.json y
+
+## 🎯 Héroes Incluidos
+
+### Iron Man
+
+Alias: Tony Stark
+
+Habilidades: Tecnología avanzada, Vuelo supersónico, Rayos repulsores
+
+Primera aparición: Tales of Suspense #39 (1963)
+
+### Spider-Man
+
+Alias: Peter Parker
+
+Habilidades: Fuerza sobrehumana, Sentido arácnido, Agilidad mejorada
+
+Primera aparición: Amazing Fantasy #15 (1962)
+
+### Black Panther
+
+Alias: T'Challa
+
+Habilidades: Fuerza mejorada, Traje de vibranium, Estratega experto
+
+Primera aparición: Fantastic Four #52 (1966)
+
+## 🔧 Scripts Disponibles
+
+```bash
+
+Iniciar en modo desarrollo
+npm start
+
+Ejecutar en Android
+npm run android
+
+Ejecutar en iOS
+npm run ios
+
+Ejecutar en web
+npm run web
+```
+
+## 📝 Próximas Características
+
+Sincronización con backend
+
+Notificaciones push para tareas
+
+Más héroes de Marvel
+
+Modo oscuro
+
+Exportar/importar tareas
+
+## 🤝 Contribuir
+
+Haz fork del proyecto
+
+Crea una rama para tu feature (git checkout -b feature/AmazingFeature)
+
+Commit tus cambios (git commit -m 'Add some AmazingFeature')
+
+Push a la rama (git push origin feature/AmazingFeature)
+
+Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
+
+## 🆘 Soporte
+
+Si tienes problemas o preguntas:
+
+Revisa la documentación de Expo
+
+Abre un issue en el repositorio
+
+Contacta al desarrollador
+
+¡Disfruta de la aplicación! 🚀
+
+
+
+Abre un issue en el repositorio
+
+Contacta al desarrollador
+
+¡Disfruta de la aplicación! 🚀
