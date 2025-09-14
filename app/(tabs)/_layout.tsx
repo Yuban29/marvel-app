@@ -1,10 +1,12 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+
 
 import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
+import { Tabs } from 'expo-router';
+import React from 'react';
+// Update the import path if the file is located at 'constants/theme' relative to the project root
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Colors } from '../../constants/theme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
